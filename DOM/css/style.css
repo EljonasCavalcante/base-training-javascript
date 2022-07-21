@@ -65,3 +65,49 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     margin-bottom: 1rem;
     grid-column: 1 / 4;
 }
+
+.animais h2 {
+    font-family: monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #e54;
+}
+
+.animais h2::before {
+    content: '';
+    display: inline-block; /*para ficar na mesma linha*/
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #FB5;
+
+} 
+
+.animais p {
+    font-family: Arial;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.animais-lista {
+    height: 370px;
+    overflow: scroll;
+    grid-column: 2;
+}
+
+.animais-lista::-webkit-scrollbar {
+    width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+    background: #FB5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;    
+}
+
+.animais-lista::-webkit-scrollbar-track {
+    background: #faf6ed;
+   
+}
+
