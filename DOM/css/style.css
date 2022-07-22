@@ -144,5 +144,37 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   margin-bottom: .5rem;
   margin-left: 30px;
 }
+ .mapa {
+  grid-column: 2;
+ }
 
+ .dados {
+   grid-column: 3;
+ }
 
+ .dados li {
+  margin-bottom: 1rem;
+  font-family: Arial;
+ }
+
+ .dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FB5;
+ }
+
+ .copy {
+  grid-column: 3 / 5;
+  margin-bottom: 2rem;
+  background: #FB5;
+ }
+
+ .copy p {
+  padding: 20px;
+  font-family: monospace;
+  font-weight: bold;
+
+ }
