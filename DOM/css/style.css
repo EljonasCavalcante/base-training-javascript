@@ -130,6 +130,19 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   color: #e54;
 }
 
+.faq-lista dt::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FB5;
+}
 
+.faq-lista dd {
+  font-family: Arial;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
 
 
