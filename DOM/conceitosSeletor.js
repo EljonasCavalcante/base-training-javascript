@@ -17,7 +17,7 @@ console.log(primeiraLi);
 
 // selecionar o primeiro link interno
 
-const linkInternos = document.querySelector('[href^="#"');
+const linkInternos = document.querySelector('[href^="#"]');
 console.log(linkInternos);
 
 // selecionar todos
