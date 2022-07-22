@@ -107,7 +107,29 @@ body, h1, h2, ul, li, p, dd, dt, dl {
 }
 
 .animais-lista::-webkit-scrollbar-track {
-    background: #faf6ed;
-   
+    background: #faf6ed;   
 }
+
+.animais-descicao {
+  grid-column: 3;
+}
+
+.animais-descicao section {
+  margin-bottom: 3rem;
+}
+
+.faq-lista {
+  grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #e54;
+}
+
+
+
 
