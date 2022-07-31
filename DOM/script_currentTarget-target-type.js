@@ -9,4 +9,3 @@ function callbackList(event) {
 }
 
 animaisList.addEventListener('click', callbackList)
-
