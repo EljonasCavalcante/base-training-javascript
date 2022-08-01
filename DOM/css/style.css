@@ -1,8 +1,19 @@
+.azul {
+  background: blue;
+}
+
+
+
 body, h1, h2, ul, li, p, dd, dt, dl {
     margin: 0px;
     padding: 0px;
   }
   
+ 
+  html.textoMaior {
+    font-size: 150%;
+  }
+
   img {
     display: block;
     max-width: 100%;
@@ -19,7 +30,8 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
   }
-  
+ 
+
   .menu {
     grid-column: 3 / 5;
     margin-top: 2rem;
