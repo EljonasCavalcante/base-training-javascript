@@ -1,8 +1,8 @@
 function initTabNav() {
      const tabMenu = document.querySelectorAll('.js-tabmenu li');
-    console.log(tabMenu)
+  
     const tabContent = document.querySelectorAll('.js-tabcontent section');
-    console.log(tabContent)
+  
 
      //faz texto sempre ficar ativo no iniciar.
     if(tabMenu.length && tabContent.length) {       
@@ -26,5 +26,13 @@ function initTabNav() {
 initTabNav(); // isolando em uma função
 
 /*============= Accordion-list=================*/
-const faq = document.querySelectorAll('.faq dt');
-console.log(faq)
+const AccordionList = document.querySelectorAll('.js-accordion dt');
+
+function activeAccordion(event) {
+    this.classList.add('ativo');
+    this.nextElementSibling.add('ativo');
+}
+
+AccordionList.forEach((item) => {
+    item.addEventListener('click', activeAccordion);
+})
