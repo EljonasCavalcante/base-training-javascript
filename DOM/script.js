@@ -23,7 +23,7 @@ function initTabNav() {
     })
     }
 }
-initTabNav();
+initTabNav(); // isolando em uma função
 
 /*============= Accordion-list=================*/
 const faq = document.querySelectorAll('.faq dt');
