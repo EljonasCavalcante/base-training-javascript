@@ -108,6 +108,10 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     grid-column: 2;
 }
 
+.animais-lista li{
+  cursor: pointer;
+}
+
 .animais-lista::-webkit-scrollbar {
     width: 18px;
 }
@@ -218,3 +222,27 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     margin-bottom: 0px;
   }
  }
+
+/*======= javascript======*/
+ .js-tabcontent section{
+  display: none;
+ }
+
+ .js-tabcontent section.ativo{
+  display: block !important;
+  animation: show .5s forwards; /* chamando a animação (show) abaixo com tempo (5.s) e o "forwards" serve para dizer que ela termina no final do ciclo */
+ }
+
+/*=======animação text javascript======*/
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0, 0);
+  }
+  
+}
