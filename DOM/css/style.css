@@ -246,3 +246,21 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   }
   
 }
+
+ .js .js-accordion dd{
+  display: none;
+}
+
+.js-accordion dd.ativo{
+  display: block;
+}
+
+.js-accordion dt::after{
+  content: '⤵';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after{
+  content: '⤴'; 
+}
+
