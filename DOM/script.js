@@ -28,9 +28,9 @@ initTabNav(); // isolando em uma função
 /*============= Accordion-list=================*/
 const AccordionList = document.querySelectorAll('.js-accordion dt');
 
-function activeAccordion(event) {
-    this.classList.add('ativo');
-    this.nextElementSibling.add('ativo');
+function activeAccordion() {
+    this.classList.toggle('ativo');
+    this.nextElementSibling.toggle('ativo');
 }
 
 AccordionList.forEach((item) => {
