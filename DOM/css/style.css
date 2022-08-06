@@ -247,8 +247,8 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   
 }
 
- .js .js-accordion dd{
-  display: none;
+ .js-accordion dd{
+  display: block;
 }
 
 .js-accordion dd.ativo{
