@@ -26,13 +26,19 @@ function initTabNav() {
 initTabNav(); // isolando em uma função
 
 /*============= Accordion-list=================*/
-const AccordionList = document.querySelectorAll('.js-accordion dt');
 
-function activeAccordion() {
-    this.classList.toggle('ativo');
-    this.nextElementSibling.toggle('ativo');
+function initAccordion() {
+    const activeClass = 'ativo'
+    const AccordionList = document.querySelectorAll('.js-accordion dt');
+    if( AccordionList.length) {
+        function activeAccordion() {
+            this.classList.toggle(activeClass);
+            this.nextElementSibling.toggle(activeClass);
+        }
+
+        AccordionList.forEach((item) => {
+            item.addEventListener('click', activeAccordion);
+        });
+    }
 }
-
-AccordionList.forEach((item) => {
-    item.addEventListener('click', activeAccordion);
-})
+initAccordion();
