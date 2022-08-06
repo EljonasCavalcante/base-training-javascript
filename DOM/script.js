@@ -42,3 +42,24 @@ function initAccordion() {
     }
 }
 initAccordion();
+
+// ====== scroll suavel========
+
+const linkInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    const topo = section.offsetTop;
+
+ //=== forma alternativa
+    // window.scrollTo({
+    //     top: 1000,
+    //     behavior: 'smooth',
+    // })
+}
+
+linkInternos.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+})
