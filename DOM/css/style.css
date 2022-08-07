@@ -264,3 +264,15 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   content: '⤴'; 
 }
 
+/*=====animação sroll======*/
+.js .js-scroll{
+  opacity: 0;
+  transform:  translate(-30,0,0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform:  translate(0,0,0);
+ 
+}
