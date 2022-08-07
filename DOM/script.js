@@ -64,3 +64,30 @@ function initScrollSuave() {
         link.addEventListener('click', scrollToSection);
     });
 }
+
+//===== scroll animação =====
+
+function initAnimacaoScroll() {
+    const sections = document.querySelectorAll('.js-scroll');
+
+    if(sections.length) {
+        const windowMetadeDaTela = window.innerHeight * 0.5;
+
+
+        function animaScroll() {
+        sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const isSectionVisible = (sectionTop - windowMetadeDaTela) < 0;
+            if(isSectionVisible ) {
+            section.classList.add('ativo')
+            }
+        })
+        }
+
+        animaScroll();
+
+        window.addEventListener('scroll', animaScroll);
+    }
+}
+
+initAnimacaoScroll();
