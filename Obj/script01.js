@@ -1,13 +1,15 @@
-function Dom(seletor) {
-   seletor.element = function() {
-      return document.querySelector(seletor);     
-   },
-   this.ativar = function() {      
-      this.element().elementSelcionado.classList.add('ativar'); 
-   }
-}
+// Crie 3 pessoas, João - 20 anos,
+// Maria - 25 anos, Bruno - 15 anos
+const 
 
-const li = new Dom('li')
+// Crie uma Constructor Function (Dom) para manipulação
+// de listas de elementos do dom. Deve conter as seguintes
+// propriedades e métodos:
+//
 
+
+// elements, retorna NodeList com os elementos selecionados
+// addClass(classe), adiciona a classe a todos os elementos
+// removeClass(classe), remove a classe a todos os elementos
 
 
