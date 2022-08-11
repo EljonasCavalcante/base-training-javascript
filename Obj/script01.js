@@ -1,10 +1,13 @@
-const Dom = {
-   seletor: 'li',
-   element() {
-      return document.querySelector(this.seletor);     
+function Dom(seletor) {
+   seletor.element = function() {
+      return document.querySelector(seletor);     
    },
-   ativar() {      
-      this.element().elementSelcionado.classList.add('Ativar') 
+   this.ativar = function() {      
+      this.element().elementSelcionado.classList.add('ativar'); 
    }
 }
+
+const li = new Dom('li')
+
+
 
