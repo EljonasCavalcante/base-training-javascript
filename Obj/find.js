@@ -12,3 +12,10 @@ const indexUva = frutas.findIndex((item) => {
 });
 
 console.log("findIndex :", indexUva);
+
+/* O método find() retorna o valor do
+ primeiro elemento do array que satisfizer 
+ a função de teste provida.
+ Caso contrario, undefined é retornado. */
+
+ 
