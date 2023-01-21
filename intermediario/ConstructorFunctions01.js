@@ -8,3 +8,15 @@ function Carro(marcaAtribuida, precoAtribuido){
 // new é responsável por criar um novo objeto
 const honda = new Carro('Hnda', 3000); 
 const fiat = new Carro('Fiat', 4000);
+
+
+// Outro exemplo
+
+function CarroTwo(marca, precoIncial){
+    this.taxa = 1.2;
+    const precoFinal = precoIncial * this.taxa
+    this.marca = marca;
+    this.preco = precoFinal;
+}
+
+const mazda = new CarroTwo('Mazda', 5000)
